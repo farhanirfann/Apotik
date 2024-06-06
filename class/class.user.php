@@ -36,6 +36,22 @@ class User extends Connection
         else
             $this->message = 'Data gagal ditambahkan!';
     }
+
+    public function Login($name, $pass){
+        $sql = "SELECT * FROM user";
+
+        $result = mysqli_query($this->connection, $sql);
+        if (mysqli_num_rows($result) == 1) {
+            $this->hasil = true;
+            $data = mysqli_fetch_assoc($result);
+            $this->userid = $data['userid'];
+            $this->password = $data['password'];
+            $this->name = $data['name'];
+            $this->email = $data['email'];
+            $this->role = $data['role'];
+        }
+    }
+
     public function ValidateEmail($inputemail)
     {
 

@@ -31,52 +31,48 @@ if (isset($_POST['btnSubmit'])) {
     $objObat->AddObat();
 
     echo "<script> alert('$objObat->message'); </script>";
-} else {
-    $data_obat = $objObat->SelectAllObat();
 }
 ?>
+<div class="container">
+    <div class="text-center pt-4">
+        <img src="./img/logo.png" class="img-fluid" style="width:20%" alt="">
+    </div>
+    <div class="text-center pt-1 mb-4 ">
+        <h1>Masukkan Obat</h1>
+    </div>
 
-<form enctype="multipart/form-data" method="post" action="index.php?p=tambahobat">
-    <table class="table">
-        <tr>
-            <td>Nama Obat</td>
-            <td>:</td>
-            <td><input type="text" class="form-control" name="nama_obat" value="<?php echo $objObat->nama_obat; ?>">
-            </td>
-        </tr>
-        <tr>
-            <td>Kategori Obat</td>
-            <td>:</td>
-            <td><input type="text" class="form-control" name="kategori_obat"
-                    value="<?php echo $objObat->kategori_obat; ?>">
-            </td>
-        </tr>
-        <tr>
-            <td>Harga Obat</td>
-            <td>:</td>
-            <td><input type="text" class="form-control" name="harga_obat" value="<?php echo $objObat->harga_obat; ?>">
-            </td>
 
-        </tr>
-        <tr>
-            <td>Penjelasan Obat</td>
-            <td>:</td>
-            <td><textarea class="form-control" name="penjelasan_obat" rows="3" cols="19">
-        <?php echo $objObat->penjelasan_obat; ?></textarea></td>
-        </tr>
-        <tr>
-            <td>Upload Foto Obat</td>
-            <td>:</td>
-            <td>
-                <input class="form-control" type="file" id="formFile" name="uploadfoto">
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2"></td>
-            <td><input type="submit" class="btn btn-success" value="Tambahkan" name="btnSubmit">
+    <form enctype="multipart/form-data" method="post" action="index.php?p=tambahobat">
+        <table class="table">
+            <div class="mb-3">
+                <label class="form-label">Nama Obat</label>
+                <input type="text" class="form-control border border-2 border-black" id="exampleFormControlInput1"
+                    name="nama_obat" value="<?php echo $objObat->nama_obat; ?>">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Kategori Obat</label>
+                <input type="text" class="form-control border border-2 border-black" id="exampleFormControlInput1"
+                    name="kategori_obat" value="<?php echo $objObat->kategori_obat; ?>">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Harga Obat</label>
+                <input type="text" class="form-control border border-2 border-black" id="exampleFormControlInput1"
+                    name="harga_obat" value="<?php echo $objObat->harga_obat; ?>">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Penjelasan Obat</label>
+                <textarea type="text" class="form-control border border-2 border-black" id="exampleFormControlInput1"
+                    rows="3" name="penjelasan_obat" value="<?php echo $objObat->penjelasan_obat; ?>">
+            </textarea>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Upload Foto Obat</label>
+                <input class="form-control border border-2 border-black" type="file" id="formFile" name="uploadfoto">
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <input type="submit" class="btn btn-success" value="Tambahkan" name="btnSubmit">
                 <a href="index.php?p=listobat"></a>
-            </td>
-        </tr>
-
-    </table>
-</form>
+            </div>
+        </table>
+    </form>
+</div>

@@ -1,5 +1,7 @@
 <?php
 require "inc.connection.php";
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,67 +15,50 @@ require "inc.connection.php";
     <!-- <link rel="stylesheet" href="style/style.css"> -->
 </head>
 
-<body class="container">
+<body>
     <header>
         <nav class="navbar navbar-expand-lg">
-            <header>
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-3">
-                                <a class="nav-link" href="index.php"><img src="img/logo.png" style="width:75%"
-                                        alt=""></a>
-                            </div>
-                            <div class="col">
-                                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                                    <div class="navbar-nav">
-                                        <div class="row">
-                                            <div class="col-6 ms-4 mb-3 mt-2">
-                                                <form class="d-flex" role="search">
-                                                    <input class="form-control me-2" type="search" placeholder="Search"
-                                                        aria-label="Search">
-                                                    <button class="btn btn-outline-success"
-                                                        type="submit">Search</button>
-                                                </form>
-                                            </div>
-                                            <div class="col-9">
-                                                <div class="row">
-                                                    <div class="col-2">
-                                                        <a class="nav-link" href="index.php?p=home">Home</a>
-                                                    </div>
-                                                    <div class="col-2">
-                                                        <a class="nav-link" href="index.php?p=jenis">Jenis Obat</a>
-                                                    </div>
-                                                    <div class="col-3">
-                                                        <a class="nav-link" href="index.php?p=kategori">Obat-Obat</a>
-                                                    </div>
-                                                    <div class="col-3">
-                                                        <a class="nav-link" href="index.php?p=contact">Contact Us</a>
-                                                    </div>
-                                                    <div class="col-2">
-                                                        <a class="nav-link" href="index.php?p=tambahobat">Tambahkan Obat</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="row pt-4">
-                                    <div class="col"><a class="nav-link" href="index.php?p=login">Login</a></div>
-                                    <div class="col"><p>|</p></div>
-                                    <div class="col"><a class="nav-link" href="index.php?p=register">Register</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </header>
-        </nav>
-    </header>
+            <div class="container-fluid">
+                <a class="nav-link ms-4" href="index.php"><img src="img/logo.png" style="width:45%" alt=""></a>
+                <div style="display: flex; align-items: center; background-color: #0B9C4E; border-radius: 25px; 
+                        overflow: hidden;">
+                    <input type="text" placeholder="Search Here" style="border: 2px solid #0B9C4E; padding: 10px 15px; border-radius: 25px 0 0 25px; outline: none; 
+                            width: 200px;">
+                    <button
+                        style=" background-color: #00a94f; border: none; color: white; padding: 10px 15px; 
+                            border-radius: 0 25px 25px 0; cursor: pointer; transition: background-color 0.3s;">Search</button>
+                </div>
+                <div class="collapse navbar-collapse ms-4" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php?p=home" style="color:#000000">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php?p=jenis" style="color:#000000">Kategori Obat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php?p=kategori" style="color:#000000">Obat-Obat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php?p=contact" style="color:#000000">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php?p=tambahobat" style="color:#000000">Input Obat</a>
+                        </li>
+                    </ul>
 
-    <main class="container">
+                    <div class="d-flex me-3">
+                        <div class="m-1"><a class="nav-link" href="index.php?p=login">Login</a></div>
+                        <div class="m-1">|</div>
+                        <div class="m-1"><a class="nav-link" href="index.php?p=register">Register</a></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        </header>
+
+    <main>
         <?php
         $pages_dir = 'pages';
         if (!empty($_GET['p'])) {
@@ -97,7 +82,7 @@ require "inc.connection.php";
         ?>
     </main>
 
-        
+
     <!-- <footer class="fixed-bottom container-fluid text-center">
         <div class="container">
             <div class="logo">
