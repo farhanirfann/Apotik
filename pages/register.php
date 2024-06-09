@@ -13,7 +13,7 @@ if (isset($_POST['btnSubmit'])) {
         $password = $_POST['password'];
         $objUser->password = password_hash($password, PASSWORD_DEFAULT);
         $objUser->name = $_POST["name"];
-        $objUser->role = 'employee';
+        $objUser->role = 'user';
         $objUser->AddUser();
 
         if ($objUser->hasil) {
@@ -47,7 +47,7 @@ if (isset($_POST['btnSubmit'])) {
                     aria-label="password" required>
             </div>
             <div class="mt-4 w-100">
-                <p style="color:#FFFFFF;">Already have a Account? <a href="">Login</a></p>
+                <p style="color:#FFFFFF;">Already have a Account? <a href="index.php?p=login">Login</a></p>
             </div>
             <div class="mt-4 d-flex justify-content-center align-items-center">
                 <input type="submit" class="btn btn-light" value="Register" name="btnSubmit">

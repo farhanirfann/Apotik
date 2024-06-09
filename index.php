@@ -12,6 +12,9 @@ require "inc.connection.php";
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <!-- <link rel="stylesheet" href="style/style.css"> -->
 </head>
 
@@ -34,29 +37,28 @@ require "inc.connection.php";
                             <a class="nav-link" href="index.php?p=home" style="color:#000000">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php?p=jenis" style="color:#000000">Kategori Obat</a>
+                            <a class="nav-link" href="index.php?p=home#kategori" style="color:#000000">Kategori Obat</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php?p=kategori" style="color:#000000">Obat-Obat</a>
+                            <a class="nav-link" href="index.php?p=home#obat" style="color:#000000">Obat-Obat</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php?p=contact" style="color:#000000">Contact Us</a>
+                            <a class="nav-link" href="#footer" style="color:#000000">Contact Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="index.php?p=tambahobat" style="color:#000000">Input Obat</a>
                         </li>
                     </ul>
 
-                    <div class="d-flex me-3">
-                        <div class="m-1"><a class="nav-link" href="index.php?p=login">Login</a></div>
-                        <div class="m-1">|</div>
-                        <div class="m-1"><a class="nav-link" href="index.php?p=register">Register</a></div>
+                    <div class="d-flex">
+                        <div class=""><a class="nav-link" href="index.php?p=login">Login</a></div>
+                        <div class="mt-2"><h6>|</h6></div>
+                        <div class=""><a class="nav-link" href="index.php?p=register">Register</a></div>
                     </div>
                 </div>
             </div>
         </nav>
-
-        </header>
+    </header>
 
     <main>
         <?php
@@ -80,27 +82,47 @@ require "inc.connection.php";
             include "pages/home.php";
         }
         ?>
+
     </main>
 
 
-    <!-- <footer class="fixed-bottom container-fluid text-center">
-        <div class="container">
-            <div class="logo">
-                <img src="LogoP.png" alt="Logo">
+
+    <section id="footer">
+        <footer class="text-center"
+            style="background-color: #00a651; color: white; margin-top: 70px; padding-top: 20px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <h4 style="margin-bottom: 20px; color: #000000">Hubungi Kami</h4>
+                        <a href="#" style="margin: 0 10px; color: white;"><img src="./img/ig.png"
+                                style="width: 50px;" /></a>
+                        <a href="#" style="margin: 0 10px; color: white;"><img src="./img/fb.png"
+                                style="width: 50px;" /></a>
+                        <a href="#" style="margin: 0 10px; color: white;"><img src="./img/x.png"
+                                style="width: 50px;" /></a>
+                        <a href="#" style="margin: 0 10px; color: white;"><img src="./img/wa.png"
+                                style="width: 50px;" /></a>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <h5 class="pt-3" style="margin-bottom: 20px; color:#000000">Download Aplikasi Kami</h5>
+                        <a href="#"><img src="./img/appstore.png" style="width: 165px; margin: 0 10px;" /></a>
+                        <a href="#"><img src="./img/playstore.png" style="width: 150px; margin: 0 10px;" /></a>
+                    </div>
+                </div>
             </div>
-            <div class="contact-info">
-                <p>Alamat: Menara 165 Jl.Tb.Simatupang, <br>Cilandak Barat, Pasar Minggu, Jakarta Selatan<br></p>
-                <ul>
-                    <li>Email: Medicalzeus@gmail.com</li>
-                    <li>Telepon: +62891998768</li>
-                    <li>WhatsApp: +62889123066</li>
-                </ul>
+            <div class="col-12" style="background-color:#FFFFFF">
+                <p style="margin-top: 20px; color:#000000">© Copyright Zeuss and Co</p>
             </div>
-        </div>
-    </footer> -->
+        </footer>
+    </section>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

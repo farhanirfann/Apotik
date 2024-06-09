@@ -22,12 +22,11 @@
         $no = 1;
         foreach ($arrayResult as $dataObat) {
             echo '<tr>';
-            echo '<td>' . $no . '</td>';
-            echo '<td>' . $dataObat->kode_obat . '</td>';
-            echo '<td>' . $dataObat->nama_obat . '</td>';
-            echo '<td>' . $dataObat->kategori_obat . '</td>';
-            echo '<td>' . $dataObat->harga_obat . '</td>';
-            echo '<td>' . $dataObat->penjelasan_obat . '</td>';
+            echo '<td>' . $dataObat->kode_obat . $no .'</td>';
+            echo '<td>' . $dataObat->namaobat . '</td>';
+            echo '<td>' . $dataObat->kategori . '</td>';
+            echo '<td>' . $dataObat->harga . '</td>';
+            echo '<td>' . $dataObat->penjelasan . '</td>';
             echo '<td><a class="btn btn-warning" href="index.php' . $dataObat->kode_obat . '"> Edit </a> | <a class="btn btn-danger" href="index.php' . $dataObat->kode_obat . '"onclick="return confirm(\'Apakah anda yakin ingin menghapus?\')">Delete </a> </td>';
             echo '</tr>';
             $no++;

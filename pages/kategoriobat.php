@@ -1,15 +1,5 @@
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="./img/landingpage2.png" class="d-block w-100" alt="...">
-        </div>
-    </div>
-</div>
-
-<hr style="border: 2px solid #0B9C4E;">
-
-<section id="kategori">
-    <h1 class="text-center p-4">Produk Berdasarkan Kategori</h1>
+<h1 class="text-center mt-5 mb-5">Semua Kategori</h1>
+<section id="baris1">
     <div class="card-group position-relative container">
         <div class="card me-2" style="border-style: none;">
             <div class="card" style="border:7px solid #0B9C4E;">
@@ -60,112 +50,161 @@
             <h6 style="text-align:center;" class="mt-2">Pereda Nyeri</h6>
         </div>
     </div>
-    <p class="text-center p-4"><a href="index.php?p=kategoriobat">Lihat Selengkapnya</a></p>
 </section>
 
-<hr style="border: 2px solid #0B9C4E;">
-
-<section id="obat">
-    <h1 class="text-center p-4">Obat Obat</h1>
-
-    <div class="card-group position-relative ps-5 pe-5">
+<section id="baris2">
+    <div class="card-group position-relative container">
         <div class="card me-2" style="border-style: none;">
             <div class="card" style="border:7px solid #0B9C4E;">
                 <a href="" style="text-decoration:none">
                     <img src="./img/logo2.png" class="card-img-top" alt="...">
                 </a>
-                <h6 style="text-align:center;" class="mt-2">Promag</h6>
             </div>
+            <h6 style="text-align:center;" class="mt-2">Demam</h6>
         </div>
         <div class="card me-2" style="border-style: none;">
             <div class="card" style="border:7px solid #0B9C4E;">
                 <a href="" style="text-decoration:none">
                     <img src="./img/logo2.png" class="card-img-top" alt="...">
                 </a>
-                <h6 style="text-align:center;" class="mt-2">Antiseptic</h6>
             </div>
+            <h6 style="text-align:center;" class="mt-2">Hipertensi</h6>
         </div>
         <div class="card me-2" style="border-style: none;">
             <div class="card" style="border:7px solid #0B9C4E;">
                 <a href="" style="text-decoration:none">
                     <img src="./img/logo2.png" class="card-img-top" alt="...">
                 </a>
-                <h6 style="text-align:center;" class="mt-2">Antiseptic</h6>
             </div>
+            <h6 style="text-align:center;" class="mt-2">Diare</h6>
         </div>
         <div class="card me-2" style="border-style: none;">
             <div class="card" style="border:7px solid #0B9C4E;">
                 <a href="" style="text-decoration:none">
                     <img src="./img/logo2.png" class="card-img-top" alt="...">
                 </a>
-                <h6 style="text-align:center;" class="mt-2">Antiseptic</h6>
             </div>
+            <h6 style="text-align:center;" class="mt-2">Jantung</h6>
         </div>
         <div class="card me-2" style="border-style: none;">
             <div class="card" style="border:7px solid #0B9C4E;">
                 <a href="" style="text-decoration:none">
                     <img src="./img/logo2.png" class="card-img-top" alt="...">
                 </a>
-                <h6 style="text-align:center;" class="mt-2">Antiseptic</h6>
             </div>
+            <h6 style="text-align:center;" class="mt-2">Mata</h6>
         </div>
         <div class="card me-2" style="border-style: none;">
             <div class="card" style="border:7px solid #0B9C4E;">
                 <a href="" style="text-decoration:none">
                     <img src="./img/logo2.png" class="card-img-top" alt="...">
                 </a>
-                <h6 style="text-align:center;" class="mt-2">Antiseptic</h6>
             </div>
+            <h6 style="text-align:center;" class="mt-2">Mual</h6>
         </div>
     </div>
-    <div class="card-group position-relative ps-5 pe-5 pt-2">
+</section>
+<section id="baris3">
+    <div class="card-group position-relative container">
         <div class="card me-2" style="border-style: none;">
             <div class="card" style="border:7px solid #0B9C4E;">
                 <a href="" style="text-decoration:none">
                     <img src="./img/logo2.png" class="card-img-top" alt="...">
                 </a>
-                <h6 style="text-align:center;" class="mt-2">Promag</h6>
             </div>
+            <h6 style="text-align:center;" class="mt-2">Kontrasepsi</h6>
         </div>
         <div class="card me-2" style="border-style: none;">
             <div class="card" style="border:7px solid #0B9C4E;">
                 <a href="" style="text-decoration:none">
                     <img src="./img/logo2.png" class="card-img-top" alt="...">
                 </a>
-                <h6 style="text-align:center;" class="mt-2">Antiseptic</h6>
             </div>
+            <h6 style="text-align:center;" class="mt-2">Diabetes</h6>
         </div>
         <div class="card me-2" style="border-style: none;">
             <div class="card" style="border:7px solid #0B9C4E;">
                 <a href="" style="text-decoration:none">
                     <img src="./img/logo2.png" class="card-img-top" alt="...">
                 </a>
-                <h6 style="text-align:center;" class="mt-2">Antiseptic</h6>
             </div>
+            <h6 style="text-align:center;" class="mt-2">Kolesterol</h6>
         </div>
         <div class="card me-2" style="border-style: none;">
             <div class="card" style="border:7px solid #0B9C4E;">
                 <a href="" style="text-decoration:none">
                     <img src="./img/logo2.png" class="card-img-top" alt="...">
                 </a>
-                <h6 style="text-align:center;" class="mt-2">Antiseptic</h6>
             </div>
+            <h6 style="text-align:center;" class="mt-2">Kehamilan</h6>
         </div>
         <div class="card me-2" style="border-style: none;">
             <div class="card" style="border:7px solid #0B9C4E;">
                 <a href="" style="text-decoration:none">
                     <img src="./img/logo2.png" class="card-img-top" alt="...">
                 </a>
-                <h6 style="text-align:center;" class="mt-2">Antiseptic</h6>
             </div>
+            <h6 style="text-align:center;" class="mt-2">Lambung & maag</h6>
         </div>
         <div class="card me-2" style="border-style: none;">
             <div class="card" style="border:7px solid #0B9C4E;">
                 <a href="" style="text-decoration:none">
                     <img src="./img/logo2.png" class="card-img-top" alt="...">
                 </a>
-                <h6 style="text-align:center;" class="mt-2">Antiseptic</h6>
             </div>
+            <h6 style="text-align:center;" class="mt-2">Herbal</h6>
+        </div>
+    </div>
+</section>
+<section id="baris4">
+    <div class="card-group position-relative container pb-5">
+        <div class="card me-2" style="border-style: none;">
+            <div class="card" style="border:7px solid #0B9C4E;">
+                <a href="" style="text-decoration:none">
+                    <img src="./img/logo2.png" class="card-img-top" alt="...">
+                </a>
+            </div>
+            <h6 style="text-align:center;" class="mt-2">Sendi & Tulang</h6>
+        </div>
+        <div class="card me-2" style="border-style: none;">
+            <div class="card" style="border:7px solid #0B9C4E;">
+                <a href="" style="text-decoration:none">
+                    <img src="./img/logo2.png" class="card-img-top" alt="...">
+                </a>
+            </div>
+            <h6 style="text-align:center;" class="mt-2">Menstruasi</h6>
+        </div>
+        <div class="card me-2" style="border-style: none;">
+            <div class="card" style="border:7px solid #0B9C4E;">
+                <a href="" style="text-decoration:none">
+                    <img src="./img/logo2.png" class="card-img-top" alt="...">
+                </a>
+            </div>
+            <h6 style="text-align:center;" class="mt-2">THT</h6>
+        </div>
+        <div class="card me-2" style="border-style: none;">
+            <div class="card" style="border:7px solid #0B9C4E;">
+                <a href="" style="text-decoration:none">
+                    <img src="./img/logo2.png" class="card-img-top" alt="...">
+                </a>
+            </div>
+            <h6 style="text-align:center;" class="mt-2">P3K</h6>
+        </div>
+        <div class="card me-2" style="border-style: none;">
+            <div class="card" style="border:7px solid #0B9C4E;">
+                <a href="" style="text-decoration:none">
+                    <img src="./img/logo2.png" class="card-img-top" alt="...">
+                </a>
+            </div>
+            <h6 style="text-align:center;" class="mt-2">Diet</h6>
+        </div>
+        <div class="card me-2" style="border-style: none;">
+            <div class="card" style="border:7px solid #0B9C4E;">
+                <a href="" style="text-decoration:none">
+                    <img src="./img/logo2.png" class="card-img-top" alt="...">
+                </a>
+            </div>
+            <h6 style="text-align:center;" class="mt-2">Alat Kesehatan</h6>
         </div>
     </div>
 </section>

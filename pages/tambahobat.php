@@ -31,6 +31,9 @@ if (isset($_POST['btnSubmit'])) {
     $objObat->AddObat();
 
     echo "<script> alert('$objObat->message'); </script>";
+    if ($objObat->hasil) {
+        echo '<script> window.location = "index.php?p=listobat";</script>';
+    }
 }
 ?>
 <div class="container">
@@ -51,8 +54,35 @@ if (isset($_POST['btnSubmit'])) {
             </div>
             <div class="mb-3">
                 <label class="form-label">Kategori Obat</label>
-                <input type="text" class="form-control border border-2 border-black" id="exampleFormControlInput1"
-                    name="kategori_obat" value="<?php echo $objObat->kategori_obat; ?>">
+                <select class="form-select" aria-label="Default select example" name="kategori_obat">
+                    <option selected>Pilih Kategori</option>
+                    <option value="Antiseptic">Antiseptic</option>
+                    <option value="Vitamin">Vitamin</option>
+                    <option value="Suplemen">Suplemen</option>
+                    <option value="Flu dan Batuk">Flu dan Batuk</option>
+                    <option value="Asma & Pernafasan">Asma & Pernafasan</option>
+                    <option value="Pereda Nyeri">Pereda Nyeri</option>
+                    <option value="Demam">Demam</option>
+                    <option value="Hipertensi">Hipertensi</option>
+                    <option value="Diare">Diare</option>
+                    <option value="Jantung">Jantung</option>
+                    <option value="Mata">Mata</option>
+                    <option value="Mual">Mual</option>
+                    <option value="Kontrasepsi">Kontrasepsi</option>
+                    <option value="Diabetes">Diabetes</option>
+                    <option value="Kolesterol">Kolesterol</option>
+                    <option value="Kehamilan">Kehamilan</option>
+                    <option value="Lambung & maag">Lambung & maag</option>
+                    <option value="Herbal">Herbal</option>
+                    <option value="Sendi & Tulang">Sendi & Tulang</option>
+                    <option value="Menstruasi">Menstruasi</option>
+                    <option value="THT">THT</option>
+                    <option value="P3K">P3K</option>
+                    <option value="Diet">Diet</option>
+                    <option value="Alat Kesehatan">Alat Kesehatan</option>
+                </select>
+                <!-- <input type="text" class="form-control border border-2 border-black" id="exampleFormControlInput1"
+                    name="kategori_obat" value="<?php echo $objObat->kategori_obat; ?>"> -->
             </div>
             <div class="mb-3">
                 <label class="form-label">Harga Obat</label>
