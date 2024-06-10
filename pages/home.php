@@ -1,12 +1,15 @@
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="./img/landingpage2.png" class="d-block w-100" alt="...">
+<section id="navbargambar" class="mb-5">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/landingpage2.png" class="d-block w-100" alt="...">
+            </div>
         </div>
     </div>
-</div>
+</section>
 
-<hr style="border: 2px solid #0B9C4E;">
+
+<div style="border: 2px solid #0B9C4E;"></div>
 
 <section id="kategori">
     <h1 class="text-center p-4">Produk Berdasarkan Kategori</h1>
@@ -63,7 +66,7 @@
     <p class="text-center p-4"><a href="index.php?p=kategoriobat">Lihat Selengkapnya</a></p>
 </section>
 
-<hr style="border: 2px solid #0B9C4E;">
+<div style="border: 2px solid #0B9C4E;"></div>
 
 <section id="obat">
     <h1 class="text-center p-4">Obat Obat</h1>

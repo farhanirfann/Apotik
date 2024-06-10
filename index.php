@@ -22,7 +22,7 @@ require "inc.connection.php";
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="nav-link ms-4" href="index.php"><img src="img/logo.png" style="width:45%" alt=""></a>
+                <a class="nav-link ms-4 me-5" href="index.php"><img src="img/logo.png" style="width:20vh" alt=""></a>
                 <div style="display: flex; align-items: center; background-color: #0B9C4E; border-radius: 25px; 
                         overflow: hidden;">
                     <input type="text" placeholder="Search Here" style="border: 2px solid #0B9C4E; padding: 10px 15px; border-radius: 25px 0 0 25px; outline: none; 
@@ -49,7 +49,7 @@ require "inc.connection.php";
                             <a class="nav-link" href="index.php?p=tambahobat" style="color:#000000">Input Obat</a>
                         </li>
                     </ul>
-
+                    <a href=""><img src="./img/keranjang.png" style="width:35px;" class="me-4" alt=""></a>
                     <div class="d-flex">
                         <div class=""><a class="nav-link" href="index.php?p=login">Login</a></div>
                         <div class="mt-2"><h6>|</h6></div>
@@ -94,19 +94,21 @@ require "inc.connection.php";
                 <div class="row">
                     <div class="col-12 mb-3">
                         <h4 style="margin-bottom: 20px; color: #000000">Hubungi Kami</h4>
-                        <a href="#" style="margin: 0 10px; color: white;"><img src="./img/ig.png"
+                        <a href="https://www.instagram.com/" style="margin: 0 10px; color: white;"><img
+                                src="./img/ig.png" style="width: 50px;" /></a>
+                        <a href="https://www.facebook.com/" style="margin: 0 10px; color: white;"><img
+                                src="./img/fb.png" style="width: 50px;" /></a>
+                        <a href="https://x.com/" style="margin: 0 10px; color: white;"><img src="./img/x.png"
                                 style="width: 50px;" /></a>
-                        <a href="#" style="margin: 0 10px; color: white;"><img src="./img/fb.png"
-                                style="width: 50px;" /></a>
-                        <a href="#" style="margin: 0 10px; color: white;"><img src="./img/x.png"
-                                style="width: 50px;" /></a>
-                        <a href="#" style="margin: 0 10px; color: white;"><img src="./img/wa.png"
-                                style="width: 50px;" /></a>
+                        <a href="https://api.whatsapp.com/send?phone=6282112307927&text=Halo%20saya%20ingin%20berkonsultasi%20tentang%20obat%20apotik"
+                            style="margin: 0 10px; color: white;"><img src="./img/wa.png" style="width: 50px;" /></a>
                     </div>
                     <div class="col-12 mb-3">
                         <h5 class="pt-3" style="margin-bottom: 20px; color:#000000">Download Aplikasi Kami</h5>
-                        <a href="#"><img src="./img/appstore.png" style="width: 165px; margin: 0 10px;" /></a>
-                        <a href="#"><img src="./img/playstore.png" style="width: 150px; margin: 0 10px;" /></a>
+                        <a href="https://www.apple.com/app-store/"><img src="./img/appstore.png"
+                                style="width: 165px; margin: 0 10px;" /></a>
+                        <a href="https://play.google.com/store/"><img src="./img/playstore.png"
+                                style="width: 150px; margin: 0 10px;" /></a>
                     </div>
                 </div>
             </div>

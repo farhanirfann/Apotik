@@ -81,8 +81,6 @@ if (isset($_POST['btnSubmit'])) {
                     <option value="Diet">Diet</option>
                     <option value="Alat Kesehatan">Alat Kesehatan</option>
                 </select>
-                <!-- <input type="text" class="form-control border border-2 border-black" id="exampleFormControlInput1"
-                    name="kategori_obat" value="<?php echo $objObat->kategori_obat; ?>"> -->
             </div>
             <div class="mb-3">
                 <label class="form-label">Harga Obat</label>
